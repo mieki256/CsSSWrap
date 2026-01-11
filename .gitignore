@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+build/
+screensaver_samples/CsScrSaverFullOnly.exe
+
 # User-specific files
 *.rsuser
 *.suo
