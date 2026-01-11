@@ -46,7 +46,7 @@ namespace CsSSWrap
                 label1.Font = new Font("Tahoma", 11, FontStyle.Bold);
                 if (name == "" || name == "None")
                 {
-                    label1.Text = Properties.Resources.AppliName;
+                    label1.Text = Program.AppliName;
                 }
                 else
                 {

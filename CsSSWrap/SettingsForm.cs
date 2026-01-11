@@ -23,8 +23,8 @@ namespace CsSSWrap
             _data = Program.LoadDataFile();
             UpdateListBox(_data);
 
-            labelTitle.Text = Properties.Resources.AppliName;
-            labelVersion.Text = "ver. " + Properties.Resources.AppliVersion;
+            labelTitle.Text = Program.AppliName;
+            labelVersion.Text = "ver. " + Program.AppliVersion;
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

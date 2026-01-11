@@ -61,67 +61,12 @@ namespace CsSSWrap.Properties {
         }
         
         /// <summary>
-        ///   CsSSWrap に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string AppliConfigDir {
-            get {
-                return ResourceManager.GetString("AppliConfigDir", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   CsSSWrap.json に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string AppliConfigFile {
-            get {
-                return ResourceManager.GetString("AppliConfigFile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   CsSSWrap に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string AppliName {
-            get {
-                return ResourceManager.GetString("AppliName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   1.0.0.0 に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string AppliVersion {
-            get {
-                return ResourceManager.GetString("AppliVersion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
         internal static System.Drawing.Icon cssswrap_icon {
             get {
                 object obj = ResourceManager.GetObject("cssswrap_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   CsharpScreenSaverWrapperMutex に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string MutexName {
-            get {
-                return ResourceManager.GetString("MutexName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap preview_image01 {
-            get {
-                object obj = ResourceManager.GetObject("preview_image01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

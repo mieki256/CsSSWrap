@@ -30,7 +30,13 @@ namespace CsSSWrap
 
     internal static class Program
     {
-        private static Mutex? _mutex = new Mutex(false, Properties.Resources.MutexName);
+        public const string AppliName = "CsSSWrap";
+        public const string AppliConfigDir = "CsSSWrap";
+        public const string AppliConfigFile = "CsSSWrap.json";
+        public const string AppliVersion = "1.0.1.0";
+        public const string MutexName = "CsharpScreenSaverWrapperMutex";
+
+        private static Mutex? _mutex = new Mutex(false, MutexName);
         private static bool hasHandle = false;
 
         private static AppliSaveData? _saveData = new AppliSaveData();
@@ -183,13 +189,13 @@ namespace CsSSWrap
         public static string GetDataDir()
         {
             string roamingPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            return Path.Combine(roamingPath, Properties.Resources.AppliConfigDir);
+            return Path.Combine(roamingPath, AppliConfigDir);
         }
 
         // データ保存ファイルパスを返す
         public static string GetDataFilePath()
         {
-            return Path.Combine(GetDataDir(), Properties.Resources.AppliConfigFile);
+            return Path.Combine(GetDataDir(), AppliConfigFile);
         }
 
         // データファイルを保存
