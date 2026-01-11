@@ -42,9 +42,9 @@ Environment / 動作確認環境
 Install / インストール方法
 --------------------------
 
-build/CsSSWrap.scr を以下のフォルダにコピーする。
+Releasesページからzipを入手して解凍すると、CsSSWrap.scr が入っているので、以下のフォルダにコピーする。
 
-* 64bit版Windowsの場合、C:/Windows/System32/ 以下にコピーする。
+* 64bit版Windowsの場合、C:/Windows/System32/ 以下にコピー。
 
 32bit版Windowsには未対応。
 
