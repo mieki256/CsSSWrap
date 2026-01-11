@@ -47,5 +47,19 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-
+  
+  <Choose>
+    <When Condition="'$(PublishProtocol)' != '' or '$(Configuration)' == 'Release'">
+      <PropertyGroup>
+        <PublishSelfContained>true</PublishSelfContained>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+        <IncludeAllContentForSelfExtract>false</IncludeAllContentForSelfExtract>
+        <PublishTrimmed>false</PublishTrimmed>
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+      </PropertyGroup>
+    </When>
+  </Choose>
 </Project>
